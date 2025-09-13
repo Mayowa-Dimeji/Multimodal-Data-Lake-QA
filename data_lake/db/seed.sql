@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS movies;
+CREATE TABLE movies (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  release_year INTEGER,
+  director TEXT,
+  box_office_usd INTEGER,
+  runtime_min INTEGER,
+  genres TEXT
+);
+INSERT INTO movies (title, release_year, director, box_office_usd, runtime_min, genres) VALUES
+('Inception', 2010, 'Christopher Nolan', 829895144, 148, 'Science Fiction, Thriller'),
+('Interstellar', 2014, 'Christopher Nolan', 677471339, 169, 'Science Fiction, Drama'),
+('The Dark Knight', 2008, 'Christopher Nolan', 1005455211, 152, 'Action, Crime'),
+('Tenet', 2020, 'Christopher Nolan', 365304105, 150, 'Science Fiction, Action'),
+('Memento', 2000, 'Christopher Nolan', 39900000, 113, 'Mystery, Thriller'),
+('Oppenheimer', 2023, 'Christopher Nolan', 952000000, 180, 'Drama, Biography');
