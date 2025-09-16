@@ -1,0 +1,259 @@
+{
+  "query": "Compare ...",
+  "route": "both",
+  "route_confidence": 0.85,
+  "answer": {
+    "answer": "- The Dark Knight ratings: IMDb 9.0, Metacritic 84 [CSV].\n- Critics note: Inception is frequently described as a mind-bending heist film that delves into dreams, reality, and guilt.  Critics praise its layered structure, practical effects, and Hans Zimmer's score. [DOC].",
+    "used_modalities": [
+      "CSV",
+      "DOC"
+    ],
+    "citations": []
+  },
+  "evidence": {
+    "query": "Compare ...",
+    "retrieval": {
+      "db": [],
+      "csv": [
+        {
+          "source_id": "csv:movies.csv:The Dark Knight",
+          "origin": "CSV",
+          "file": "movies.csv",
+          "row": {
+            "title": "The Dark Knight",
+            "release_year": 2008,
+            "director": "Christopher Nolan",
+            "box_office_usd": 1005455211,
+            "runtime_min": 152,
+            "genres": "Action, Crime"
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "The Dark Knight"
+            ],
+            [
+              "movie",
+              "release_year",
+              2008
+            ],
+            [
+              "movie",
+              "director",
+              "Christopher Nolan"
+            ],
+            [
+              "movie",
+              "box_office_usd",
+              1005455211
+            ],
+            [
+              "movie",
+              "runtime_min",
+              152
+            ],
+            [
+              "movie",
+              "genres",
+              "Action, Crime"
+            ]
+          ],
+          "canonical_id": "the dark knight (2008)",
+          "score": 0.2307692307692308
+        },
+        {
+          "source_id": "csv:ratings.csv:The Dark Knight",
+          "origin": "CSV",
+          "file": "ratings.csv",
+          "row": {
+            "title": "The Dark Knight",
+            "imdb": 9.0,
+            "metacritic": 84,
+            "rt_tomatoes": 94
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "The Dark Knight"
+            ],
+            [
+              "movie",
+              "imdb",
+              9.0
+            ],
+            [
+              "movie",
+              "metacritic",
+              84
+            ],
+            [
+              "movie",
+              "rt_tomatoes",
+              94
+            ]
+          ],
+          "canonical_id": "the dark knight",
+          "score": 0.2307692307692308
+        },
+        {
+          "source_id": "csv:movies.csv:Memento",
+          "origin": "CSV",
+          "file": "movies.csv",
+          "row": {
+            "title": "Memento",
+            "release_year": 2000,
+            "director": "Christopher Nolan",
+            "box_office_usd": 39900000,
+            "runtime_min": 113,
+            "genres": "Mystery, Thriller"
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "Memento"
+            ],
+            [
+              "movie",
+              "release_year",
+              2000
+            ],
+            [
+              "movie",
+              "director",
+              "Christopher Nolan"
+            ],
+            [
+              "movie",
+              "box_office_usd",
+              39900000
+            ],
+            [
+              "movie",
+              "runtime_min",
+              113
+            ],
+            [
+              "movie",
+              "genres",
+              "Mystery, Thriller"
+            ]
+          ],
+          "canonical_id": "memento (2000)",
+          "score": 0.2222222222222223
+        },
+        {
+          "source_id": "csv:ratings.csv:Memento",
+          "origin": "CSV",
+          "file": "ratings.csv",
+          "row": {
+            "title": "Memento",
+            "imdb": 8.4,
+            "metacritic": 80,
+            "rt_tomatoes": 93
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "Memento"
+            ],
+            [
+              "movie",
+              "imdb",
+              8.4
+            ],
+            [
+              "movie",
+              "metacritic",
+              80
+            ],
+            [
+              "movie",
+              "rt_tomatoes",
+              93
+            ]
+          ],
+          "canonical_id": "memento",
+          "score": 0.2222222222222223
+        },
+        {
+          "source_id": "csv:movies.csv:Oppenheimer",
+          "origin": "CSV",
+          "file": "movies.csv",
+          "row": {
+            "title": "Oppenheimer",
+            "release_year": 2023,
+            "director": "Christopher Nolan",
+            "box_office_usd": 952000000,
+            "runtime_min": 180,
+            "genres": "Drama, Biography"
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "Oppenheimer"
+            ],
+            [
+              "movie",
+              "release_year",
+              2023
+            ],
+            [
+              "movie",
+              "director",
+              "Christopher Nolan"
+            ],
+            [
+              "movie",
+              "box_office_usd",
+              952000000
+            ],
+            [
+              "movie",
+              "runtime_min",
+              180
+            ],
+            [
+              "movie",
+              "genres",
+              "Drama, Biography"
+            ]
+          ],
+          "canonical_id": "oppenheimer (2023)",
+          "score": 0.18181818181818188
+        }
+      ],
+      "docs": [
+        {
+          "source_id": "doc:inception.txt",
+          "origin": "DOC",
+          "chunk": "Inception is frequently described as a mind-bending heist film that delves into dreams, reality, and guilt. \nCritics praise its layered structure, practical effects, and Hans Zimmer's score.\n",
+          "metadata": {
+            "doc": "inception.txt"
+          },
+          "score": 0.9030387997627258
+        },
+        {
+          "source_id": "doc:interstellar.txt",
+          "origin": "DOC",
+          "chunk": "Interstellar explores themes of love, time dilation, and humanity's survival amid ecological collapse. \nCritics often highlight its emotional core and the father-daughter relationship between Cooper and Murph.\n",
+          "metadata": {
+            "doc": "interstellar.txt"
+          },
+          "score": 0.9067915678024292
+        }
+      ]
+    },
+    "entities": {
+      "canonical_map": {
+        "The Dark Knight": "the dark knight (2008)",
+        "Memento": "memento (2000)",
+        "Oppenheimer": "oppenheimer (2023)"
+      }
+    }
+  }
+}
