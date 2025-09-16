@@ -27,3 +27,4 @@ indexes/**
 node_modules/
 dist/
 build/
+.venv/
