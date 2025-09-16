@@ -1,0 +1,84 @@
+{
+  "query": "Compare Inception and Interstellar: box office, IMDb rating, and themes.",
+  "retrieval": {
+    "db": [
+      {
+        "source_id": "db:movies:Inception",
+        "origin": "DB",
+        "table": "movies",
+        "row": {
+          "title": "Inception",
+          "release_year": 2010,
+          "box_office_usd": 829895144
+        },
+        "triples": [
+          [
+            "movie",
+            "title",
+            "Inception"
+          ],
+          [
+            "movie",
+            "release_year",
+            2010
+          ],
+          [
+            "movie",
+            "box_office_usd",
+            829895144
+          ]
+        ],
+        "canonical_id": "inception (2010)",
+        "score": 0.99
+      }
+    ],
+    "csv": [
+      {
+        "source_id": "csv:ratings:interstellar",
+        "origin": "CSV",
+        "file": "ratings.csv",
+        "row": {
+          "title": "Interstellar",
+          "imdb": 8.7,
+          "metacritic": 74
+        },
+        "triples": [
+          [
+            "movie",
+            "title",
+            "Interstellar"
+          ],
+          [
+            "movie",
+            "imdb",
+            8.7
+          ],
+          [
+            "movie",
+            "metacritic",
+            74
+          ]
+        ],
+        "canonical_id": "interstellar",
+        "score": 0.95
+      }
+    ],
+    "docs": [
+      {
+        "source_id": "doc:interstellar.txt",
+        "origin": "DOC",
+        "chunk": "Critics describe Interstellar as a meditation on love and time.",
+        "metadata": {
+          "doc": "interstellar.txt"
+        },
+        "score": 0.88
+      }
+    ]
+  },
+  "entities": {
+    "canonical_map": {
+      "Inception": "inception (2010)",
+      "Interstellar": "interstellar"
+    }
+  }
+}
