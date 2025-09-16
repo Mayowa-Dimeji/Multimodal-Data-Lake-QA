@@ -1,0 +1,257 @@
+{
+  "query": "Which Nolan movie had the highest IMDb rating?",
+  "answer": {
+    "answer": "- The Dark Knight ratings: IMDb 9.0, Metacritic 84 [CSV].\n- Critics note: Inception is frequently described as a mind-bending heist film that delves into dreams, reality, and guilt.  Critics praise its layered structure, practical effects, and Hans Zimmer's score. [DOC].",
+    "used_modalities": [
+      "CSV",
+      "DOC"
+    ],
+    "citations": []
+  },
+  "evidence": {
+    "query": "Which Nolan movie had the highest IMDb rating?",
+    "retrieval": {
+      "db": [],
+      "csv": [
+        {
+          "source_id": "csv:movies.csv:The Dark Knight",
+          "origin": "CSV",
+          "file": "movies.csv",
+          "row": {
+            "title": "The Dark Knight",
+            "release_year": 2008,
+            "director": "Christopher Nolan",
+            "box_office_usd": 1005455211,
+            "runtime_min": 152,
+            "genres": "Action, Crime"
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "The Dark Knight"
+            ],
+            [
+              "movie",
+              "release_year",
+              2008
+            ],
+            [
+              "movie",
+              "director",
+              "Christopher Nolan"
+            ],
+            [
+              "movie",
+              "box_office_usd",
+              1005455211
+            ],
+            [
+              "movie",
+              "runtime_min",
+              152
+            ],
+            [
+              "movie",
+              "genres",
+              "Action, Crime"
+            ]
+          ],
+          "canonical_id": "the dark knight (2008)",
+          "score": 0.3278688524590164
+        },
+        {
+          "source_id": "csv:ratings.csv:The Dark Knight",
+          "origin": "CSV",
+          "file": "ratings.csv",
+          "row": {
+            "title": "The Dark Knight",
+            "imdb": 9.0,
+            "metacritic": 84,
+            "rt_tomatoes": 94
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "The Dark Knight"
+            ],
+            [
+              "movie",
+              "imdb",
+              9.0
+            ],
+            [
+              "movie",
+              "metacritic",
+              84
+            ],
+            [
+              "movie",
+              "rt_tomatoes",
+              94
+            ]
+          ],
+          "canonical_id": "the dark knight",
+          "score": 0.3278688524590164
+        },
+        {
+          "source_id": "csv:movies.csv:Inception",
+          "origin": "CSV",
+          "file": "movies.csv",
+          "row": {
+            "title": "Inception",
+            "release_year": 2010,
+            "director": "Christopher Nolan",
+            "box_office_usd": 829895144,
+            "runtime_min": 148,
+            "genres": "Science Fiction, Thriller"
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "Inception"
+            ],
+            [
+              "movie",
+              "release_year",
+              2010
+            ],
+            [
+              "movie",
+              "director",
+              "Christopher Nolan"
+            ],
+            [
+              "movie",
+              "box_office_usd",
+              829895144
+            ],
+            [
+              "movie",
+              "runtime_min",
+              148
+            ],
+            [
+              "movie",
+              "genres",
+              "Science Fiction, Thriller"
+            ]
+          ],
+          "canonical_id": "inception (2010)",
+          "score": 0.2545454545454545
+        },
+        {
+          "source_id": "csv:ratings.csv:Inception",
+          "origin": "CSV",
+          "file": "ratings.csv",
+          "row": {
+            "title": "Inception",
+            "imdb": 8.8,
+            "metacritic": 74,
+            "rt_tomatoes": 87
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "Inception"
+            ],
+            [
+              "movie",
+              "imdb",
+              8.8
+            ],
+            [
+              "movie",
+              "metacritic",
+              74
+            ],
+            [
+              "movie",
+              "rt_tomatoes",
+              87
+            ]
+          ],
+          "canonical_id": "inception",
+          "score": 0.2545454545454545
+        },
+        {
+          "source_id": "csv:movies.csv:Interstellar",
+          "origin": "CSV",
+          "file": "movies.csv",
+          "row": {
+            "title": "Interstellar",
+            "release_year": 2014,
+            "director": "Christopher Nolan",
+            "box_office_usd": 677471339,
+            "runtime_min": 169,
+            "genres": "Science Fiction, Drama"
+          },
+          "triples": [
+            [
+              "movie",
+              "title",
+              "Interstellar"
+            ],
+            [
+              "movie",
+              "release_year",
+              2014
+            ],
+            [
+              "movie",
+              "director",
+              "Christopher Nolan"
+            ],
+            [
+              "movie",
+              "box_office_usd",
+              677471339
+            ],
+            [
+              "movie",
+              "runtime_min",
+              169
+            ],
+            [
+              "movie",
+              "genres",
+              "Science Fiction, Drama"
+            ]
+          ],
+          "canonical_id": "interstellar (2014)",
+          "score": 0.24137931034482762
+        }
+      ],
+      "docs": [
+        {
+          "source_id": "doc:inception.txt",
+          "origin": "DOC",
+          "chunk": "Inception is frequently described as a mind-bending heist film that delves into dreams, reality, and guilt. \nCritics praise its layered structure, practical effects, and Hans Zimmer's score.\n",
+          "metadata": {
+            "doc": "inception.txt"
+          },
+          "score": 0.6573026180267334
+        },
+        {
+          "source_id": "doc:interstellar.txt",
+          "origin": "DOC",
+          "chunk": "Interstellar explores themes of love, time dilation, and humanity's survival amid ecological collapse. \nCritics often highlight its emotional core and the father-daughter relationship between Cooper and Murph.\n",
+          "metadata": {
+            "doc": "interstellar.txt"
+          },
+          "score": 0.7029653787612915
+        }
+      ]
+    },
+    "entities": {
+      "canonical_map": {
+        "The Dark Knight": "the dark knight (2008)",
+        "Inception": "inception (2010)",
+        "Interstellar": "interstellar (2014)"
+      }
+    }
+  }
+}
